@@ -27,8 +27,8 @@ Why 16 bytes here? There are four local variables used by the program, each
 of type `int`, therefore requiring 4 bytes of storage. We would have to
 move 4 bytes from the base of the stack to find the address of the `fizz`
 variable, 8 bytes to find the address of `buzz`, and so on. If you look
-earlier in the disassembled code, you'll a value of 0 being written into
-these memory addresses.
+earlier in the disassembled code, you'll see other `movl` instructions that
+put a value of 0 into these memory addresses.
 
 Now take a look at the three `printf()` calls. Each of them is represented
 by 5 assembly language instructions. See if you can figure out exactly what
