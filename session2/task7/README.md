@@ -59,12 +59,11 @@ In GitHub Codespaces, you may find it helpful to install a PGM viewer extension
 to visualise your images:
 
 1. Click on the Extensions icon in the sidebar (or press Ctrl+Shift+X)
-2. Search for "PBM Viewer" (this supports PBM, PGM, and PPM formats)
+2. Search for "Float and TIFF Visualizer" (this supports several different
+   image formats, including PGM)
 3. Install the extension
-4. After installation, you can right-click on any `.pgm` file and select
-   "Open with PBM Viewer"
-
-This will allow you to see the actual images instead of just the raw text data.
+4. After installation, you can single- or double-click on any `.pgm` file to
+   see it displayed by VS Code
 
 ## Your Task
 
