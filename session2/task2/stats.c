@@ -15,9 +15,12 @@ void read_data(const char* filename, float data[], int* size)
     *size = 0;
     FILE* infile = fopen(filename, "r");
 
-    if (infile != NULL) {
-        for (int i = 0; i < MAX_SIZE; ++i) {
-            if (fgets(line, MAX_LENGTH, infile) == NULL) {
+    if (infile != NULL)
+    {
+        for (int i = 0; i < MAX_SIZE; ++i)
+        {
+            if (fgets(line, MAX_LENGTH, infile) == NULL)
+            {
                 break;
             }
 
