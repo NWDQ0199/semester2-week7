@@ -78,9 +78,12 @@ int main(int argc, char **argv) {
                 scanf("%99s", output_filename);
                 getchar(); /* Consume newline */
 
-                if (save_pgm_image(output_filename, processed_image, height, width, max_gray)) {
+                if (save_pgm_image(output_filename, processed_image, height, width, max_gray))
+                {
                     printf("Inverted image saved to %s\n", output_filename);
-                } else {
+                }
+                else
+                {
                     printf("Failed to save inverted image\n");
                 }
 
