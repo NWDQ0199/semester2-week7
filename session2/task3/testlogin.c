@@ -9,8 +9,8 @@
 
 int main(void)
 {
-    char* input = (char*) malloc(8 * sizeof(char));
-    char* password = (char*) malloc(8 * sizeof(char));
+    char* input = (char*) malloc(9 * sizeof(char));
+    char* password = (char*) malloc(9 * sizeof(char));
 
     if (input > password) {
         char* ptr = input;
@@ -29,13 +29,14 @@ int main(void)
       gets(input);
     #else
       char* tmp = getpass("Enter your password: ");
+      tmp[8]='\0';
       strcpy(input, tmp);
     #endif
 
     /* Make sure strings are null-terminated */
 
     //strings are already null-terminated
-    //password[7] = input[7] = '\0';
+    //password[8] = input[8] = '\0';
 
     /* Authenticate by comparing acquired and stored passwords */
 
