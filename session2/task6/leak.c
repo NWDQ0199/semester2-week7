@@ -17,7 +17,7 @@ int main(/*int argc, char* argv[]*/)
 
     printf("String is: %s\n", str);
 
-    free(str);
+    //free(str); //fix for leak
 
     return 0;
 }
