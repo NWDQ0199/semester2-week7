@@ -34,7 +34,8 @@ int main(void)
 
     /* Make sure strings are null-terminated */
 
-    password[7] = input[7] = '\0';
+    //strings are already null-terminated
+    //password[7] = input[7] = '\0';
 
     /* Authenticate by comparing acquired and stored passwords */
 
